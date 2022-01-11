@@ -35,6 +35,7 @@ public static class MauiProgram
 
 		// Add Alerts Pages
 		builder.Services.AddTransient<SnackbarPage>();
+		builder.Services.AddTransient<ToastPage>();
 
 		// Add Alerts View Models
 
