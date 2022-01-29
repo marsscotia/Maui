@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Maui.Sample.Pages;
+﻿using CommunityToolkit.Maui.Markup;
+using CommunityToolkit.Maui.Sample.Pages;
 using CommunityToolkit.Maui.Sample.Pages.Alerts;
 using CommunityToolkit.Maui.Sample.Pages.Behaviors;
 using CommunityToolkit.Maui.Sample.Pages.Converters;
@@ -17,7 +18,7 @@ public static class MauiProgram
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
-		builder.UseMauiApp<App>().UseMauiCommunityToolkit();
+		builder.UseMauiApp<App>().UseMauiCommunityToolkit().UseMauiCommunityToolkitMarkup();
 
 		// Add Gallery Pages
 		builder.Services.AddTransient<AlertsGalleryPage>();
